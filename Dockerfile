@@ -1,5 +1,5 @@
 FROM  debian:bookworm-slim
-LABEL maintainer="BAYESIA"
+LABEL maintainer="baptisterajaut"
 
 RUN apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
@@ -18,10 +18,10 @@ ENV OIDCRedirectURI=NOTCHANGED
 ENV RoleClaimName=roles
 ENV MinimumRole=NOTCHANGED
 ENV SubPath=NOTCHANGED
-ENV IsBehindReverseProxy=TRUE
-ENV ForceHTTPS=TRUE
+ENV IsBehindReverseProxy=FALSE
+ENV ForceHTTPS=FALSE
 ENV EnableOIDCDebug=FALSE
-ENV OIDCSessionInactivityTimeout=10
+ENV OIDCSessionInactivityTimeout=30
 ENV OIDCHeaders="X-Forwarded-Port X-Forwarded-Proto Forwarded X-Forwarded-Host"
 
 
