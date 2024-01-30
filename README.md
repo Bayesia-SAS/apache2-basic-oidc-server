@@ -1,4 +1,4 @@
-# Apache2 Oidc basic server
+# Apache2 basic oidc server
 A simple oidc server for docker. 
 
 ## Requirements
