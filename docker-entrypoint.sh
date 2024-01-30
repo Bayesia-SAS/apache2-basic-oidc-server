@@ -21,8 +21,8 @@ if [ "$ServerAdmin" == "root@localhost" ];then
     >&2 echo "Warning : It's good practice to set a server admin mail (ServerAdmin)"
 fi
 
-if [ "$role" == "NOTCHANGED" ];then
-    >&2 echo "FATAL : OIDC minimum role (role) has not been set !"
+if [ "$MinimumRole" == "NOTCHANGED" ];then
+    >&2 echo "FATAL : OIDC minimum role (MinimumRole) has not been set !"
     e=1
 fi
 if [ "$ForceHTTPS" == "TRUE" ]; then
