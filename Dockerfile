@@ -1,5 +1,5 @@
 FROM  debian:bookworm-slim
-LABEL maintainer="baptisterajaut"
+LABEL maintainer="Bayesia-SAS"
 
 RUN apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
